@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     env_name = os.getenv("ENV_NAME", "dev")
-    return f"Python Flask App running on ECS Fargate - Environment: {env_name}"
+    return f"Python Flask App running on ECS Fargate-Environment: {env_name}"
 
 @app.route("/health")
 def health():
